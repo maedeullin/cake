@@ -222,10 +222,10 @@ function displayCheckout(){
         </div>
         <div class="col-7">
             <h6>${product.name}</h6>
-            <p><span>${product.quantity}x</span> <span>@RM${product.price}</span></p>
+            <p><span>${product.quantity}x</span> <span>@RM${(product.price).toFixed(2)}</span></p>
         </div>
         <div class="col-3">
-            <p>RM${product.price * product.quantity}</p>
+            <p>RM${(product.price * product.quantity).toFixed(2)}</p>
         </div>
         </div>
         `
